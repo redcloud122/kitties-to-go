@@ -17,15 +17,20 @@ main a {
   color: #0086b3;
 }
 
-nav a:visited, footer a:visited {
-  color: inherit;
-}
-
 main a:visited {
   color: #0086b3;
 }
 
-nav a:hover, main a:hover, footer a:hover {
+main a:hover {
+  color: #0086b3;
+  background: lightgray;
+}
+
+a.act {
+  color: #0086b3;
+}
+
+a.ready:hover{
   color: #0086b3;
   background: lightgray;
 }
@@ -179,4 +184,13 @@ footer a {
   padding-right: .2rem;
   padding-left: .2rem;
   white-space: nowrap;
+}
+
+footer a:visited {
+  color: inherit;
+}
+
+footer a:hover {
+  color: #0086b3;
+  background: lightgray;
 }
