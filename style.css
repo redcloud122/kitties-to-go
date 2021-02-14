@@ -4,6 +4,16 @@
   color: #434756;
 }
 
+.hidden {
+  position: relative;
+  left: -10000px;
+  top:auto;
+}
+
+.hidden:focus {
+  left: 0;
+}
+
 main h4 {
   color: #0086b3;
 }
@@ -33,10 +43,6 @@ a.act {
 a.ready:hover{
   color: #0086b3;
   background: lightgray;
-}
-
-main p {
-  font-size: small;
 }
 
 p.header {
@@ -83,18 +89,21 @@ nav ul li {
 }
 
 nav ul li:after {
-  content: "/";
+  content: " / ";
+  font-weight: bold;
+  color: #0086b3;
   padding: 0 .5em;
+}
+
+nav ul li:last-child:after {
+  content: none;
 }
 
 nav li a {
   color: black;
   letter-spacing: 1px;
-  font-weight:800
-}
-
-nav li a:first-child {
-  padding-left: 0;
+  font-weight:800;
+  padding: 1rem 1rem;
 }
 
 header, nav, main {
@@ -132,10 +141,6 @@ blockquote p {
 
 p.italic {
   font-style: italic;
-}
-
-q {
-  font-size:smaller;
 }
 
 hr {
